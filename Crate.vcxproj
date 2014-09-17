@@ -41,16 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Common;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29;C:\Users\DaddiBluJr\Desktop\DX\Code\Common;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\DaddiBluJr\Desktop\DX\Code\Common;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>
-    </IncludePath>
-    <LibraryPath>
-    </LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29;C:\Users\DaddiBluJr\Desktop\DX\Code\Common;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\DaddiBluJr\Desktop\DX\Code\Common;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -75,7 +72,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -86,33 +83,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\Camera.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\d3dApp.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\d3dUtil.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\GameTimer.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\GeometryGenerator.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\LightHelper.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\MathHelper.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\TextureMgr.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\Waves.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\xnacollision.cpp" />
+    <ClCompile Include="..\..\Common\Camera.cpp" />
+    <ClCompile Include="..\..\Common\d3dApp.cpp" />
+    <ClCompile Include="..\..\Common\d3dUtil.cpp" />
+    <ClCompile Include="..\..\Common\GameTimer.cpp" />
+    <ClCompile Include="..\..\Common\GeometryGenerator.cpp" />
+    <ClCompile Include="..\..\Common\LightHelper.cpp" />
+    <ClCompile Include="..\..\Common\MathHelper.cpp" />
+    <ClCompile Include="..\..\Common\Waves.cpp" />
+    <ClCompile Include="..\..\Common\xnacollision.cpp" />
     <ClCompile Include="CrateDemo.cpp" />
     <ClCompile Include="Effects.cpp" />
     <ClCompile Include="RenderStates.cpp" />
     <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\Camera.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\d3dApp.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\d3dUtil.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\d3dx11effect.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\GameTimer.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\GeometryGenerator.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\LightHelper.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\MathHelper.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\TextureMgr.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\Waves.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Common\xnacollision.h" />
+    <ClInclude Include="..\..\Common\Camera.h" />
+    <ClInclude Include="..\..\Common\d3dApp.h" />
+    <ClInclude Include="..\..\Common\d3dUtil.h" />
+    <ClInclude Include="..\..\Common\d3dx11effect.h" />
+    <ClInclude Include="..\..\Common\GameTimer.h" />
+    <ClInclude Include="..\..\Common\GeometryGenerator.h" />
+    <ClInclude Include="..\..\Common\LightHelper.h" />
+    <ClInclude Include="..\..\Common\MathHelper.h" />
+    <ClInclude Include="..\..\Common\Waves.h" />
+    <ClInclude Include="..\..\Common\xnacollision.h" />
     <ClInclude Include="Effects.h" />
     <ClInclude Include="RenderStates.h" />
     <ClInclude Include="Vertex.h" />
@@ -121,13 +116,13 @@
     <None Include="FX\LightHelper.fx" />
   </ItemGroup>
   <ItemGroup>
+    <Library Include="..\..\Common\Effects11.lib" />
+    <Library Include="..\..\Common\Effects11d.lib" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="FX\Basic.fx">
       <FileType>Document</FileType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Effects11.lib" />
-    <Library Include="Effects11d.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
