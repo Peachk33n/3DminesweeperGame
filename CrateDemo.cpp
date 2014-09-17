@@ -6,7 +6,7 @@
 // Controls:
 //		Hold the left mouse button down and move the mouse to rotate.
 //      Hold the right mouse button down to zoom in and out.
-// Trios
+//
 //***************************************************************************************
 
 #include "d3dApp.h"
